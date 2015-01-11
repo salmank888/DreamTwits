@@ -1,0 +1,27 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+       <item name="android:actionBarTabStyle">@style/AppBaseTheme.ActionBar.TabView</item>
+       <item name="android:actionBarTabBarStyle">@style/AppBaseTheme.ActionBar.TabBar</item>
+    	<item name="android:actionBarTabTextStyle">@style/AppBaseTheme.ActionBar.TabText</item>
+    </style>
+
+    <style name="AppBaseTheme.ActionBar.TabView" parent="android:style/Widget.Holo.ActionBar.TabView">
+    <item name="android:background">@drawable/tab_bar_backgroud</item>
+</style>
+
+    <style name="AppBaseTheme.ActionBar.TabBar" parent="android:style/Widget.Holo.Light.ActionBar.TabBar">
+    <!-- This is an ORANGE background -->
+    <item name="android:background">@color/tab_bar</item>
+</style>
+
+    <style name="AppBaseTheme.ActionBar.TabText" parent="android:style/Widget.Holo.ActionBar.TabText">
+    <!-- This is a WHITE tab color -->
+    <item name="android:textColor">@drawable/tab_bar_text</item>
+</style>
+</resources>
